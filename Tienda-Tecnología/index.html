@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Tienda de Tecnología</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="menu_logo">
+        <h1 class="nav--h1">Tecnología</h1>
+        <a class="btn_menu" id="menu"><img class="img--menu" src="/css/inconos/bars-solid.svg" alt="menu"></a>
+      </div>
+      <div class="nav--busqueda">
+        <input type="text" placeholder="Buscar" id="input-busqueda">
+        <button class="lupa" id="lupa">
+          <a href="#cards">
+            <img class="img--menu" src="/css/inconos/search-solid.svg" alt="search"> 
+          </a>
+        </button>  
+      </div>
+      <div class="menu_cuenta">
+        <img class="img--menu" src="/css/inconos/user-circle-solid.svg" alt="" srcset="">
+        <button class="btn_micuenta">Mi cuenta</button>
+      </div>
+      <button class="btn_carrito"><img class="img--menu" src="/css/inconos/shopping-cart-solid.svg" alt="" srcset=""></button>
+    </nav>
+    <div id="menu_desplegable" class="menu_desplegable">
+      <a class="link_menu" href="#"><img src="/css/inconos/favorites_star_icon.svg" alt="stars" id="icono-stars"></a>
+      <a class="link_menu" href="#"><img src="/css/inconos/tv-solid.svg" id="icono-tv" alt="tv"></a>
+      <a class="link_menu"href="#"><img src="/css/inconos/headphones-solid.svg"  id="icono-auricular" alt="auricular"></a>
+      <a class="link_menu" href="#"><img src="/css/inconos/game_play_icon.png" alt="videogame" id="icono-videogame"></a>
+      <a class="link_menu" href="#"><img src="/css/inconos/camera.png" id="icono-camara"alt=""></a>
+      <a class="link_menu" href="#"><img src="/css/inconos/computer_desktop.svg" alt="" id="icono-pc"></a>
+    </div>
+    <div class="detalle-menu-desplegable" id="detalle-menu-desplegable">
+      <div class="novedades-ofertas" id="novedades-ofertas">
+        <a href="#" id="noved-ofer">Novedades y Ofertas</a>
+      </div>
+      <div class="tv" id="tv">
+        <a href="#" id="tv-1">Televisores</a>
+        <a href="#" id="tv-2">Home Theatre</a>
+      </div>
+      <div class="auricular" id="auricular">
+        <a href="#" id="auricular-1">Sistema de audio</a>
+        <a href="#" id="auricular-2">Parlantes inalambricos</a>
+        <a href="#" id="auricular-3">Auriculares</a>
+      </div>
+      <div class="videogame" id="videogame">
+        <a href="#" id="videogame-1">Consolas</a>
+        <a href="#" id="videogame-2">Accesorios para Playstation</a>
+        <a href="#" id="videogame-3">Juegos</a>
+      </div>
+      <div class="camara" id="camara">
+        <a href="#" id="camara-1">Camaras</a>
+        <a href="#" id="camara-2">Lentes</a>
+        <a href="#" id="camara-3">Accesorios para camaras</a>
+        <a href="#" id="camara-4">Filmadoras</a>
+      </div>
+      <div class="pc" id="pc">
+        <a href="#" id="pc-1">Computadoras de escritorio</a>
+        <a href="#" id="pc-2">Notebooks</a>
+        <a href="#" id="pc-3">Netbooks</a>
+        <a href="#" id="pc-4">tablets</a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider">
+      <section class="section-imagenes">  
+        <img src="/css/producto/img_1.jpg" alt="Image1">
+        <img src="/css/producto/img_3.png" alt="Image4">
+        <img src="/css/producto/img_9.webp" alt="Image5">
+        <img src="/css/producto/img_2.jpg" alt="Image6">
+        <img src="/css/producto/img_4.jpg" alt="Image7">
+        <img src="/css/producto/img_5.webp" alt="Image8">
+      </section>
+    </div>
+    
+    <aside class="cartel">
+      <h1>Encontrá lo que buscas</h1>
+    </aside>
+    
+    <section class="catalogo" id="catalogo">
+      
+    
+      <div class="select-filtros">
+        <div class="filtros filtros-precio">
+          <div class="select-filtros-menu" id="menu-precio">
+            <span id="span_precio">Ordenar por...</span>
+            <div class="arrow">
+              <i class="arrow-down" id="down-precio"><img src="/css/inconos/arrow_down_icon.svg" alt=""></i>
+              <i class="arrow-up" id="up-precio"><img src="/css/inconos/arrow_up_icon.svg" alt=""></i>
+            </div>
+          </div>
+          <div class="opciones-precio" id="precio">
+            <div class="item-opciones-precio">Más relevantes</div>
+            <div class="item-opciones-precio">Menor precio</div>
+            <div class="item-opciones-precio">Mayor precio</div>
+            <div class="item-opciones-precio">All...</div>
+          </div>
+        </div>
+
+      
+        <div class="filtros filtros-marca">
+          <div class="select-filtros-menu" id="menu-marca">
+            <span id="span_marca">Marca...</span>
+            <div class="arrow">
+              <i class="arrow-down" id="down-marca"><img src="/css/inconos/arrow_down_icon.svg" alt=""></i>
+              <i class="arrow-up" id="up-marca"><img src="/css/inconos/arrow_up_icon.svg" alt=""></i>
+            </div>
+          </div>
+          <div class="opciones-marca" id="marca">
+            <div class="item-opciones-marca" >Julieta</div>
+            <div class="item-opciones-marca" >LG</div>
+            <div class="item-opciones-marca" >Sony</div>
+            <div class="item-opciones-marca" >Intel</div>
+            <div class="item-opciones-marca" >Square Enix</div>
+            <div class="item-opciones-marca" >Grinch</div>
+            <div class="item-opciones-marca" >Olympus</div>
+            <div class="item-opciones-marca" >Panasonic</div>
+            <div class="item-opciones-marca" >Ideon</div>
+            <div class="item-opciones-marca" >Canon</div>
+            <div class="item-opciones-marca" >Creative</div>
+            <div class="item-opciones-marca" >All...</div>
+          </div>
+        </div>
+    </div>  
+
+    
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="novedades_ofertas">
+      <div class="nov_ofer">
+        <h2>Recibí las mejores ofertas!</h2>
+        <img src="/css/inconos/letter_communication_email_envelope_mail_icon.svg" alt="correo">
+      </div>
+      <div class="nov-ofer-form">
+        <form action="">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+          <input type="mail" placeholder="Correo">
+          <button type="submit">SUSCRIBIRME</button>
+        </form>
+      </div>
+    </section>
+    <section class="venta">
+      <div class="section-telef">
+        <h2>Venta telofónica <a href="tel:54+1133567231">4521-3521</a></h2>
+        <span>Lunes a Viernes de 10 a 19hs</span>
+      </div>
+      <div class="barra-vertical"></div>
+      <div class="section-corp">
+        <h2>Venta Corporativas para Empresas</h2>
+        <span>Conocé mas sobre este servicio <a href="#">aquí</a></span>
+      </div>
+    </section>
+    <div class="btn_whatsapp"></div>
+  </main>
+  <footer class="footer">
+    <div class="footer">
+      <h2>seguinos en...</h2>
+      <div class="redes-sociales">
+        <img src="/css/inconos/facebook_media_social_icon.svg" alt="facebook">
+        <img src="/css/inconos/instagram_logo_media_network_new_icon.svg" alt="instagram">
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/constantes.js"></script>
+  <script src="main.js"></script>
+  <script src="/js/productos.js"></script>
+</body>
+</html>
